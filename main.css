@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f8f9fa; /* light background */
+  background: #f5f5f5; /* lighter and neutral background */
   color: #333;
   line-height: 1.6;
 }
@@ -18,8 +18,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: linear-gradient(90deg, rgb(11, 11, 11), black);
-  color: white;
+  background: linear-gradient(90deg, #0b0b0b, #000);
+  color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -30,7 +30,7 @@ body {
   align-items: center;
   font-size: 22px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 .logo img {
@@ -48,14 +48,14 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: bisque;
+  color: #f1c40f; /* gold-ish for better contrast */
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s, transform 0.2s;
 }
 
 .nav-links li a:hover {
-  color: white;
+  color: #fff;
   transform: scale(1.1);
 }
 
@@ -67,7 +67,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #fff;
   position: relative;
 }
 
@@ -76,7 +76,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5); /* overlay */
+  background: rgba(0,0,0,0.5);
 }
 
 .hero-content {
@@ -100,8 +100,8 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: white;
-  color: black;
+  background: #f1c40f; /* consistent accent color */
+  color: #111;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -111,7 +111,7 @@ body {
 
 .btn:hover {
   background: #e67e22;
-  color: white;
+  color: #fff;
   transform: scale(1.05);
 }
 
@@ -138,32 +138,35 @@ body {
   }
 }
 
+/* Login Icon */
 .login-icon {
   display: flex;
   align-items: center;
-  gap: 5px; /* small space between icon and text */
+  gap: 5px;
   padding: 5px 10px;
   border: 1px solid #333;
   border-radius: 5px;
   transition: all 0.3s ease;
+  color: #333;
 }
 
 .login-icon:hover {
   background-color: #333;
-  color: white;
+  color: #fff;
   border-color: #333;
 }
 
+/* Features Section */
 .features {
   padding: 80px 20px;
-  background-color: #f0f8ff; /* light blue */
+  background-color: #b0abab; /* dark background for contrast */
   text-align: center;
 }
 
 .features h2 {
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #333;
+  color: #282726; /* gold accent */
 }
 
 .features-container {
@@ -176,7 +179,7 @@ body {
 .feature-card {
   position: relative;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   padding: 20px;
   width: 300px;
   height: 300px;
@@ -195,33 +198,34 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  background: rgba(0,0,0,0.4); /* overlay */
   border-radius: 12px;
 }
 
 .feature-card h3,
 .feature-card p {
-  position: relative; /* to appear above overlay */
+  position: relative;
   z-index: 1;
 }
 
 .feature-card h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #101110; /* bright green */
+  color: #f1c40f;
 }
 
 .feature-card p {
   font-size: 1rem;
   line-height: 1.4;
+  color: #ddd;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-/* Responsive */
+/* Responsive Features */
 @media (max-width: 768px) {
   .features-container {
     flex-direction: column;
@@ -229,18 +233,18 @@ body {
   }
 }
 
-/* ===== Upload Section ===== */
+/* Upload Section */
 .upload-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 20px;
-  background: #fff;
+  background: #e2dbdb;
 }
 
 .upload-box {
-  background: #f8f9fa;
-  border: 2px dashed #121212; /* green border */
+  background: #e6e0e0;
+  border: 2px dashed #333; 
   border-radius: 12px;
   padding: 40px 30px;
   text-align: center;
@@ -256,27 +260,27 @@ body {
 
 .upload-box i {
   font-size: 60px;
-  color: #3a3b3a;
+  color: #333;
   margin-bottom: 20px;
 }
 
 .upload-box h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #111;
 }
 
 .upload-box p {
   font-size: 1rem;
-  color: #242323;
+  color: #555;
   margin-bottom: 20px;
 }
 
 .upload-btn {
   display: inline-block;
   padding: 12px 25px;
-  background: #161716;
-  color: #fff;
+  background: #f1c40f;
+  color: #111;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
@@ -284,5 +288,6 @@ body {
 }
 
 .upload-btn:hover {
-  background: #1a1b1a;
+  background: #e67e22;
+  color: #272424;
 }
