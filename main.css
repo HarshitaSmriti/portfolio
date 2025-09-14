@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: linear-gradient(90deg, greenyellow, limegreen);
+  background: linear-gradient(90deg, rgb(11, 11, 11), black);
   color: white;
   position: sticky;
   top: 0;
@@ -100,7 +100,7 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: yellow;
+  background: white;
   color: black;
   font-size: 18px;
   font-weight: bold;
@@ -208,7 +208,7 @@ body {
 .feature-card h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #32cd32; /* bright green */
+  color: #101110; /* bright green */
 }
 
 .feature-card p {
@@ -240,7 +240,7 @@ body {
 
 .upload-box {
   background: #f8f9fa;
-  border: 2px dashed #32cd32; /* green border */
+  border: 2px dashed #121212; /* green border */
   border-radius: 12px;
   padding: 40px 30px;
   text-align: center;
@@ -256,7 +256,7 @@ body {
 
 .upload-box i {
   font-size: 60px;
-  color: #32cd32;
+  color: #3a3b3a;
   margin-bottom: 20px;
 }
 
@@ -268,14 +268,14 @@ body {
 
 .upload-box p {
   font-size: 1rem;
-  color: #555;
+  color: #242323;
   margin-bottom: 20px;
 }
 
 .upload-btn {
   display: inline-block;
   padding: 12px 25px;
-  background: #32cd32;
+  background: #161716;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
@@ -284,5 +284,5 @@ body {
 }
 
 .upload-btn:hover {
-  background: #228b22;
+  background: #1a1b1a;
 }
